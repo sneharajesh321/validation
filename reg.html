@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="validation-engine/css/validationEngine.jquery.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="cus">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-info" style=" margin-top:15%;">
+                        <div class="panel-heading"> REGISTRATION FORM </div>
+                        <div class="panel-body">
+                            <form id="reg">
+                                <div class="form-group">
+                                    <label> NAME: </label>
+                                    <input type="text" id="name" name="name"
+                                        class="form-control validate[required,minSize[5]]">
+
+                                </div>
+                                <div class="form-group">
+                                    <label> DEGREE: </label>
+                                    <select id="degree" class="form-control">
+                                        <option value="0">--------- Select the degree -------- </option>
+                                        <option value="1"> MCA </option>
+                                        <option value="2">BCA</option>
+                                        <option value="3">B.com</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email-id: </label>
+                                    <input type="email" id="email" name="email"
+                                        class="form-control validate[custom[email]">
+                                </div>
+                                <div class="form-group">
+                                    <label>PassWord:</label>
+                                    <input type="password" id="pass" name="passw"
+                                        class="form-control validate[required]">
+
+                                </div>
+                                <div class="form-group">
+                                    <label>confirm password:</label>
+                                    <input type="password" id="cpass" name="copass"
+                                        class="form-control validate[required,equals[pass]]">
+                                    <form id="reg">
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>]">
+        </div>
+    </div>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="validation-engine/js/languages/jquery.validationEngine-en.js"></script>
+    <script src="validation-engine/js/jquery.validationEngine.min.js"></script>
+    <script>
+        $("#reg").validationEngine();
+    </script>
+
+
+
+</body>
+
+</html>

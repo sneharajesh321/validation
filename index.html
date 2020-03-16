@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation Test</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="validation-engine/css/validationEngine.jquery.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+                <div class="panel panel-success" style="margin-top: 40%;">
+                    <div class="panel-heading">Login</div>
+
+                    <div class="col-log-4 col-log-offset-4">
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <input type="text" name="username" class="form-control"
+                                        placeholder="Enter Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <input type="password" name="pass" class="form-control"
+                                        placeholder="Enter Password">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-o <div class=" container">
+                    <div class="row">
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <div class="panel panel-success" style="margin-top: 40%;">
+                                <div class="panel-heading">Login</div>
+
+                                <div class="col-log-4 col-log-offset-4">
+                                    <div class="panel-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for=""></label>
+                                                r <input type="text" name="username" class="form-control"
+                                                    placeholder="Enter Username">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for=""></label>
+                                                <input type="password" name="pass" class="form-control"
+                                                    placeholder="Enter Password">
+                                            </div>ffset-4">
+                                            <div class="panel panel-success">
+                                                <div class="panel-heading">Register</div>
+                                                <div class="panel-body">
+                                                    <form id="regform">
+                                                        <div class="form-group">
+                                                            <label for="">Name</label>
+                                                            <input type="text" name="name" id="name"
+                                                                class="form-control validate[required,minSize[3],maxSize[5]]"
+                                                                placeholder="Enter Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Email</label>
+                                                            <input type="text" name="email" id="email"
+                                                                class="form-control validate[required, custom[email]]"
+                                                                placeholder="Enter Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for=""></label>
+                                                            <input type="password" name="pass" id="pass"
+                                                                class="form-control validate[required]"
+                                                                placeholder="Enter Password">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Confirm Password</label>
+                                                            <input type="password" name="cpass" id="cpass"
+                                                                class="form-control validate[required,equals[pass]]"
+                                                                placeholtext der="Enter Confirm Password">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn btn-primary">Register</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-log-4 col-log-offset-4">
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+
+                                <script src="jquery/jquery-3.4.1.min.js"></script>
+                                <script src="validation-engine/js/languages/jquery.validationEngine-en.js"></script>
+                                <script src="validation-engine/js/jquery.validationEngine.min.js"></script>
+                                <script>
+                                    $("#regform").validationEngine();
+                                </script>
+</body>
+
+</html>

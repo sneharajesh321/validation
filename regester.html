@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="validation-engine/css/validationEngine.jquery.css">
+
+</head>
+
+
+<body>
+    <div class="contianer">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-info" style="margin-top: 15%;">
+                    <div class="panel-heading">CONTACT FORM</div>
+                    <div class="panel-body">
+                        <form id=contact>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" id="name" class="form-control validate[required[minSize[5]"
+                                    placeholder="entername">
+
+                            </div>
+                            <div class="form-group">
+                                <label>mobile no:</label>
+                                <input type="number" id="mobile"
+                                    class="form-control validate[required,custom[integer],max[50]]"
+                                    placeholder="enter mobile">
+
+                            </div>
+                            <div class="form-group">
+                                <label>Country</label>
+                                <input type="text" id="coun" class="form-control validate[required[minSize[50]"
+                                    placeholder="enter country">
+
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">SAVE</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="validation-engine/js/languages/jquery.validationEngine-en.js"></script>
+    <script src="validation-engine/js/jquery.validationEngine.min.js"></script>
+    <script>
+        $("#contact").validationEngine();
+    </script>
+</body>
+
+</html>
